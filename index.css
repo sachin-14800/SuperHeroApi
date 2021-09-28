@@ -1,0 +1,92 @@
+body{
+    background-image: url("https://m.media-amazon.com/images/I/81ave+PpogL._SL1500_.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+nav{
+    position: relative;
+    top:20%;
+    left:20%;
+    display: flex;
+    justify-content: space-between;
+    width:60%;
+}
+.app_name{
+    font-size: 50px;
+}
+.app_name a{
+    color:white;
+    text-decoration: none;
+}
+.app_name a:hover{
+    color:yellow;
+}
+.favourites button{
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    
+}
+.favourites button a{
+    color:white;
+    text-decoration: none;
+}
+.search{
+    position: relative;
+    top:30%;
+    left:20%;
+}
+.search input{
+    border: none;
+    background-color: white;
+    height:8%;
+    width:60%;
+    border-radius: 0.5rem;
+}
+#results{
+    position: relative;
+    top:30%;
+    height:100%;
+    
+    
+}
+#result
+{
+    height:100%;
+    width:80%;
+    position: relative;
+    left:10%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: left;
+    color:white;
+    font-size: 2rem;
+    padding-top: 2%;
+}
+.hero-container{
+    height:400px;
+    width:300px;
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 2rem;
+    text-align: center;
+    
+    margin-top: 2%;
+}
+.hero_img img{
+    position: relative;;
+    height:70%;
+    width:70%;
+    padding-top: 15%;
+    border-radius: 2rem;
+}
+.hero-name{
+    position: relative;
+    color:blueviolet;
+    padding-top: 2%;
+    font-size: 2rem;
+}
