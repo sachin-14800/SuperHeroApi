@@ -61,6 +61,7 @@ function Hero(data){
     else{
         fav = "success";
     }
+    // console.log(fav);
     if(fav=="success")
     content="Add to favourites";
     else
@@ -90,22 +91,36 @@ document.addEventListener('click', (event) => {
         window.open('./hero.html'+'?id='+id, "_self");
     }
     // Favourite button
-    else if(event.target.id == 'add_fav_btn'){
-        var id = event.target.parentNode.parentNode.id;
-        var favs = JSON.parse(localStorage.getItem('superheroFavs'));
+    else if(event.target.id == 'fav_btn'){
+        
+        var id = event.target.parentNode.id;
+        // console.log(id);
+        var favs = JSON.parse(localStorage.getItem('favourite'));
         // fav button decide
         if (favs.indexOf(id) != -1){
             favs = favs.filter((item) => item!=id);
-            localStorage.setItem('superheroFavs',JSON.stringify(favs));
-            event.target.src = favFalse;
-            customAlert('failure','Removed from fav');
+            localStorage.setItem('favourite',JSON.stringify(favs));
+            event.target.className = "success";
+            event.target.innerHTML="Add to favourites";
+            Alert('error','Removed from favourites');
         }
         else{
             favs.push(id);
-            localStorage.setItem('superheroFavs',JSON.stringify(favs));
-            event.target.src = favTrue;
-            customAlert('success','Added to fav');
+            console.log(favs);
+            localStorage.setItem('favourite',JSON.stringify(favs));
+            event.target.className = "error";
+            event.target.innerHTML="Remove from favourites";
+            Alert('success','Added to favourites');
         }
     }
 });
+
+function Alert(type, message){
+    var element = document.getElementsByClassName(type);
+    element[0].innerHTML = message;
+    element[0].style.visibility = "visible"
+    setTimeout(() => {
+        element[0].style.visibility = "hidden";
+    }, 1500);
+}
 

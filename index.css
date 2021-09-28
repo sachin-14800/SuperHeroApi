@@ -89,10 +89,11 @@ nav{
     color:blueviolet;
     padding-top: 2%;
     font-size: 2rem;
+    cursor: pointer;
 }
 #alert{
     visibility: hidden;
-    position: relative;
+    position: sticky;
     top:2%;
     left:85%;
     z-index:100;

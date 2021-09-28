@@ -5,24 +5,38 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
 }
+#fav_btn
+{
+    height:30px;
+    width:fit-content;
+    padding:10px;
+    margin-top: 30px;
+    
+    border-radius: 1rem;
+    color:blueviolet;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.success{
+    background-color: rgb(6, 226, 6);
+    margin-left: 20%;
+}
+.error{
+    background-color: rgb(255, 17, 17);
+    margin-left: 10%;
+}
 #alert{
     visibility: hidden;
-    position: fixed;
+    position: sticky;
     left:85%;
     z-index:100;
     color:white;
     height:20px;
     width:auto;
-    padding:10px;
+    padding:20px;
     border-radius: 1rem;
     transition-duration: 1000ms;
     font-size: 1.5rem;
-}
-.success{
-    background-color: rgb(6, 226, 6);
-}
-.error{
-    background-color: rgb(255, 17, 17);
 }
 main{
     position: relative;
@@ -145,14 +159,4 @@ nav div a:hover{
     color:white;
     font-weight: bold;
     font-size: 1.3rem;
-}
-.favourite{
-    height:30px;
-    width:fit-content;
-    padding:10px;
-    margin-top: 30px;
-    margin-left: 25%;
-    background-color: rgb(33, 248, 33);
-    border-radius: 1rem;
-    color:blueviolet;
 }
