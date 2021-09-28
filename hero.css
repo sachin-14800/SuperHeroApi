@@ -1,0 +1,158 @@
+body{
+    background-color: black;
+    overflow-x: hidden;
+    background-image: url("https://wallpapercave.com/wp/wp4884716.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#alert{
+    visibility: hidden;
+    position: fixed;
+    left:85%;
+    z-index:100;
+    color:white;
+    height:20px;
+    width:auto;
+    padding:10px;
+    border-radius: 1rem;
+    transition-duration: 1000ms;
+    font-size: 1.5rem;
+}
+.success{
+    background-color: rgb(6, 226, 6);
+}
+.error{
+    background-color: rgb(255, 17, 17);
+}
+main{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.add_padd{
+    padding:10px;
+    border-radius: 1rem;
+    border:2px solid blueviolet;
+}
+.app_name{
+    font-size: 3rem;
+    background-color: black;
+    
+}
+.app_name a{
+    color:white;
+    text-decoration: none;
+}
+.app_name a:hover{
+    color:yellow;
+}
+.favourites button{
+    font-size: 2rem;
+    border:2px solid blueviolet;
+    background-color: black;
+    margin-top: 10px;
+    border-radius: 1rem;
+    padding:10px;
+    
+}
+.favourites button a{
+    color:white;
+    text-decoration: none;
+}
+.favourites button a:hover{
+    color:red;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    padding:10px;
+    width: 100%;
+    left:-0.5%;
+    border:2px solid blueviolet;
+    background-color: black;
+}
+nav div a{
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+}
+nav div a:hover{
+    color: yellow;
+}
+#hero-detail{
+    position: relative;
+    margin-top: 2%;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    
+}
+#hero-name{
+    font-size: 3rem;
+    color:white;
+    background-color: black;
+    margin-bottom: 50px;
+    /* padding:10px; */
+    width:fit-content;
+    position: relative;
+    left:40%;
+    border-radius: 1rem;
+}
+#hero_img
+{
+    height:500px;
+    width:300px;
+    align-items: center;
+    background-color: black;
+}
+#hero_img img{
+    height:80%;
+    width: 100%;
+    border-radius: 1rem;
+}
+#main-details
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left:10%;
+}
+#other-details{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    position: relative;
+    left:10%;
+    padding:10px 30px;
+    border-radius: 1rem;
+    width:30%;
+}
+.heading{
+    font-size: 2rem;
+    color:white;
+    font-weight: bold;
+}
+#power{
+    color:white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.text{
+    color:white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.favourite{
+    height:30px;
+    width:fit-content;
+    padding:10px;
+    margin-top: 30px;
+    margin-left: 25%;
+    background-color: rgb(33, 248, 33);
+    border-radius: 1rem;
+    color:blueviolet;
+}

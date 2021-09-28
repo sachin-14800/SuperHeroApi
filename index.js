@@ -1,7 +1,7 @@
 const accessToken='1020176432135491';
 const url='https://superheroapi.com/api.php/'+accessToken+'/search/';
-document.getElementById('results').style.display="none";
 const search=document.getElementById('search');
+
 search.addEventListener('keyup',(e)=>{
     const searched_hero=e.target.value;
     console.log("We serach for "+searched_hero);
@@ -53,27 +53,59 @@ function Hero(data){
     let hero = document.createElement('div');
     hero.className = 'hero-container';
     hero.id = data.id;
-    var srcFav;
-    // var favs = JSON.parse(localStorage.getItem('superheroFavs'));
-    // // Checking if the hero is fav or not
-    // if(favs.indexOf(data.id) !== -1){
-    //     srcFav = favTrue;
-    // }
-    // else{
-    //     srcFav = favFalse;
-    // }
+    var fav,content;
+    const favourite = JSON.parse(localStorage.getItem('favourite'));
+    if(favourite.indexOf(data.id) !== -1){
+        fav = "error";
+    }
+    else{
+        fav = "success";
+    }
+    if(fav=="success")
+    content="Add to favourites";
+    else
+    content="Remove from favourites";
     hero.innerHTML = `
         <div class="hero_img">
             <img src="${data.image.url}">
         </div>
-        <div id="details_btn" class="hero-name">${data.name}</div>
-        
+        <div id="hero_name" class="hero-name">${data.name}</div>
+        <button id="fav_btn" class="${fav}">${content}</button>
     `
-    // <div class="card-btns">
-    //         <img id="add_fav_btn" src="${srcFav}" width="25">
-    //     </div>
+    
     return hero;
 }
-
-
+storage();
+function storage()
+{
+    if(localStorage.getItem('favourite')==null)
+    {
+        localStorage.setItem('favourite',JSON.stringify(Array()));
+    }
+}
+document.addEventListener('click', (event) => {
+    if(event.target.id == 'hero_name'){
+        var id = event.target.parentNode.id;
+        // console.log(event.target.parentNode.id);
+        window.open('./hero.html'+'?id='+id, "_self");
+    }
+    // Favourite button
+    else if(event.target.id == 'add_fav_btn'){
+        var id = event.target.parentNode.parentNode.id;
+        var favs = JSON.parse(localStorage.getItem('superheroFavs'));
+        // fav button decide
+        if (favs.indexOf(id) != -1){
+            favs = favs.filter((item) => item!=id);
+            localStorage.setItem('superheroFavs',JSON.stringify(favs));
+            event.target.src = favFalse;
+            customAlert('failure','Removed from fav');
+        }
+        else{
+            favs.push(id);
+            localStorage.setItem('superheroFavs',JSON.stringify(favs));
+            event.target.src = favTrue;
+            customAlert('success','Added to fav');
+        }
+    }
+});
 

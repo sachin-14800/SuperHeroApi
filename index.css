@@ -7,7 +7,7 @@ body{
 }
 nav{
     position: relative;
-    top:20%;
+    top:10%;
     left:20%;
     display: flex;
     justify-content: space-between;
@@ -35,7 +35,7 @@ nav{
 }
 .search{
     position: relative;
-    top:30%;
+    top:25%;
     left:20%;
 }
 .search input{
@@ -89,4 +89,29 @@ nav{
     color:blueviolet;
     padding-top: 2%;
     font-size: 2rem;
+}
+#alert{
+    visibility: hidden;
+    position: relative;
+    top:2%;
+    left:85%;
+    z-index:100;
+    color:white;
+    height:20px;
+    width:auto;
+    padding:20px;
+    border-radius: 1rem;
+    transition-duration: 1000ms;
+    font-size: 1.5rem;
+}
+.success{
+    background-color: rgb(6, 226, 6);
+}
+.error{
+    background-color: rgb(255, 17, 17);
+}
+#fav_btn{
+    border: none;
+    border-radius: 1rem;
+    padding:5px;
 }
