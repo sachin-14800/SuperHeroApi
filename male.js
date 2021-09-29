@@ -1,5 +1,4 @@
 const accessToken = '1020176432135491';
-const url = 'https://superheroapi.com/api.php/' + accessToken + '/search/';
 const search = document.getElementById('search');
 async function getdata(gender) {
     let results = document.getElementById('results');
@@ -8,55 +7,20 @@ async function getdata(gender) {
     result = document.createElement('div');
     result.id = 'result';
     results.prepend(result);
+    document.getElementById('loading').style.visibility="visible";
     for (let i = 1; i <= 731; i++) {
         let response = await fetch('https://superheroapi.com/api.php/' + accessToken + '/' + i);
         let data = await response.json();
         if (data.appearance.gender == gender) {
             let hero=Hero(data);
             result.appendChild(hero);
+            
         }
     }
+    document.getElementById('loading').style.visibility="hidden";
 }
-search.addEventListener('keyup', (e) => {
-    const searched_hero = e.target.value;
-    console.log("We serach for " + searched_hero);
-    if (searched_hero.length < 2) {
-        document.getElementById('result').innerHTML = "Search for more than 2 characters";
-    }
-    else {
-        getapi(searched_hero);
-    }
-});
+getdata("Male");
 
-async function getapi(searched_hero) {
-    let response = await fetch(url + searched_hero);
-    if (response.ok) {
-        document.getElementById('results').style.display = "block";
-        renderHero(await response.json());
-    }
-    else {
-        console.log("Error " + response.status);
-        alert("Error " + response.status);
-    }
-}
-function renderHero(data) {
-    if (data.response == 'error' || data.length === 0) {
-        // document.getElementById('result').innerHTML="An error encountered "+data.error;
-    }
-    else {
-        let result = document.getElementById('result');
-        result.remove();
-
-        let results = document.getElementById('results');
-        result = document.createElement('div');
-        result.id = 'result';
-        results.prepend(result);
-        console.log(data);
-        data.results.forEach(element => {
-            result.appendChild(Hero(element));
-        });
-    }
-}
 
 function Hero(data) {
     let hero = document.createElement('div');
@@ -70,7 +34,6 @@ function Hero(data) {
     else {
         fav = "success";
     }
-    // console.log(fav);
     if (fav == "success")
         content = "Add to favourites";
     else
@@ -85,12 +48,7 @@ function Hero(data) {
 
     return hero;
 }
-storage();
-function storage() {
-    if (localStorage.getItem('favourite') == null) {
-        localStorage.setItem('favourite', JSON.stringify(Array()));
-    }
-}
+
 document.addEventListener('click', (event) => {
     if (event.target.id == 'hero_name') {
         var id = event.target.parentNode.id;
