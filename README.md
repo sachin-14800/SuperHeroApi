@@ -7,3 +7,5 @@ The index file has the search option and on clicking a particular character name
 The favourite tab shows all the charcters that are marked favourites,you can mark and unmark any character as favourite and also remove it.
 
 The application is build on the SuperHero API from the https://superheroapi.com/index.html
+
+Hosted At:https://sachin-14800.github.io/SuperHeroApi/
