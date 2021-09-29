@@ -1,3 +1,4 @@
+/* styling the body  */
 body{
     background-image: url("https://m.media-amazon.com/images/I/81ave+PpogL._SL1500_.jpg");
     background-color: black;
@@ -5,6 +6,7 @@ body{
     background-size: cover;
     overflow-x: hidden;
 }
+/* nav bar */
 nav{
     position: relative;
     top:10%;
@@ -13,6 +15,7 @@ nav{
     justify-content: space-between;
     width:60%;
 }
+/* logo i.e. superhero */
 .app_name{
     font-size: 50px;
     background-color: black;
@@ -27,6 +30,8 @@ nav{
 .app_name a:hover{
     color:yellow;
 }
+
+/* favourite button */
 .favourites button{
     font-size: 30px;
     background-color: black;
@@ -42,6 +47,8 @@ nav{
 .favourites button a:hover{
     color:yellow;
 }
+
+/* search bar */
 .search{
     position: relative;
     top:25%;
@@ -54,6 +61,7 @@ nav{
     width:60%;
     border-radius: 0.5rem;
 }
+/* div for storing the results */
 #results{
     position: relative;
     top:30%;
@@ -61,6 +69,7 @@ nav{
     
     
 }
+/* div for storing search results */
 #result
 {
     height:100%;
@@ -73,8 +82,8 @@ nav{
     text-align: left;
     color:white;
     font-size: 2.5rem;
-    /* padding-top: 2%; */
 }
+/* div for storing the details of the hero */
 .hero-container{
     height:420px;
     width:300px;
@@ -82,10 +91,9 @@ nav{
     border: 2px solid blueviolet;
     border-radius: 2rem;
     text-align: center;
-    /* margin-left: 20px;
-    margin-right:50px; */
     margin-top: 4%;
 }
+/* hero image */
 .hero_img img{
     position: relative;;
     height:68%;
@@ -93,6 +101,7 @@ nav{
     padding-top: 10%;
     border-radius: 2rem;
 }
+/* hero name */
 .hero-name{
     position: relative;
     color:blueviolet;
@@ -100,6 +109,7 @@ nav{
     font-size: 2rem;
     cursor: pointer;
 }
+/* for notification alert */
 #alert{
     visibility: hidden;
     position: fixed;
@@ -115,12 +125,15 @@ nav{
     transition-duration: 1000ms;
     font-size: 1.5rem;
 }
+/* if positive notifictaion */
 .success{
     background-color: rgb(6, 226, 6);
 }
+/* if negative notification */
 .error{
     background-color: rgb(255, 17, 17);
 }
+/* favourite button */
 #fav_btn{
     border: none;
     font-weight: bold;
@@ -129,6 +142,7 @@ nav{
     cursor: pointer;
     margin-top: 5px;
 }
+/* class for male female options */
 .filter_class{
     position: relative;
     width:fit-content;
@@ -141,6 +155,7 @@ nav{
     background-color: black;
     border:2px solid blueviolet;
 }
+/* container for filter class elements */
 #filter{
     top:27%;
     position: relative;
@@ -153,6 +168,7 @@ nav{
     text-decoration: none;
     color:white;
 }
+/* loading element */
 #loading{
     font-size: 2rem;
     color: white;

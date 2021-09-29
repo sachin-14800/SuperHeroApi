@@ -1,9 +1,11 @@
+/* body */
 body{
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
 }
+/* nav-bar */
 nav{
     position: relative;
     top:10%;
@@ -12,6 +14,7 @@ nav{
     justify-content: space-between;
     width:60%;
 }
+/* name of the app i.e. Superhero */
 .app_name{
     font-size: 50px;
     border: 2px solid blueviolet;
@@ -27,6 +30,7 @@ nav{
     color:yellow;
 }
 
+/* container for storing favourite hero results */
 #result
 {
     height:100%;
@@ -42,6 +46,7 @@ nav{
     font-size: 2rem;
     padding-top: 5%;
 }
+/* container for storing information of the hero */
 .hero-container{
     height:420px;
     width:300px;
@@ -52,6 +57,7 @@ nav{
     
     margin-top: 4%;
 }
+/* hero image */
 .hero_img img{
     position: relative;;
     height:68%;
@@ -59,6 +65,7 @@ nav{
     padding-top: 15%;
     border-radius: 2rem;
 }
+/* name of the hero */
 .hero-name{
     position: relative;
     color:blueviolet;
@@ -66,6 +73,7 @@ nav{
     font-size: 2rem;
     cursor: pointer;
 }
+/* notifictaion alert */
 #alert{
     visibility: hidden;
     position: fixed;
@@ -81,12 +89,16 @@ nav{
     transition-duration: 1000ms;
     font-size: 1.5rem;
 }
+/* if positive notification */
 .success{
     background-color: rgb(6, 226, 6);
 }
+/* if negative notification */
 .error{
     background-color: rgb(255, 17, 17);
 }
+
+/* favourite button */
 #fav_btn{
     border: none;
     font-weight: bold;

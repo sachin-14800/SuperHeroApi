@@ -1,3 +1,4 @@
+/* body */
 body{
     background-color: black;
     overflow-x: hidden;
@@ -5,6 +6,7 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
 }
+/* favourite button */
 #fav_btn
 {
     height:30px;
@@ -17,14 +19,17 @@ body{
     font-size: 1.3rem;
     font-weight: bold;
 }
+/* if positive message */
 .success{
     background-color: rgb(6, 226, 6);
     margin-left: 20%;
 }
+/* if negative message */
 .error{
     background-color: rgb(255, 17, 17);
     margin-left: 10%;
 }
+/* notification alert */
 #alert{
     visibility: hidden;
     position: sticky;
@@ -40,6 +45,7 @@ body{
     transition-duration: 1000ms;
     font-size: 1.5rem;
 }
+/* header */
 header{
     position: fixed;
    top:0%;
@@ -49,19 +55,21 @@ header{
    margin-top: 0;
    background-color: black;
 }
+/* heading of the app */
 #app_heading{
     position: relative;
     display: flex;
     justify-content: space-around;
     margin-top: -1%;
-    
     padding-top: 1%;
 }
+/* additional padding */
 .add_padd{
     padding:10px;
     border-radius: 1rem;
     border:2px solid blueviolet;
 }
+/* name of the app */
 .app_name{
     font-size: 3rem;
     background-color: black;
@@ -74,6 +82,7 @@ header{
 .app_name a:hover{
     color:yellow;
 }
+/* favourite button */
 .favourites button{
     font-size: 2rem;
     border:2px solid blueviolet;
@@ -91,13 +100,13 @@ header{
 .favourites button a:hover{
     color:yellow;
 }
+/* nav-bar */
 nav{
     display: flex;
     justify-content: space-evenly;
     margin-top: 10px;
     padding:10px;
     width: 100%;
-    /* left:-1%; */
     border:2px solid blueviolet;
     background-color: black;
 }
@@ -112,28 +121,30 @@ nav div a{
 nav div a:hover{
     color: yellow;
 }
+/* helper class */
 .helper{
     position: relative;
     top:20%;
 }
+/* details of a hero */
 #hero-detail{
     position: relative;
-    /* margin-top: 2%; */
     display: flex;
     flex-direction: column;
     
 }
+/* name of the hero */
 #hero-name{
     font-size: 3rem;
     color:white;
     background-color: black;
     margin-bottom: 50px;
-    /* padding:10px; */
     width:fit-content;
     position: relative;
     left:40%;
     border-radius: 1rem;
 }
+/* hero image */
 #hero_img
 {
     height:500px;
@@ -146,6 +157,7 @@ nav div a:hover{
     width: 100%;
     border-radius: 1rem;
 }
+/* details of the hero */
 #main-details
 {
     display: flex;
@@ -153,6 +165,7 @@ nav div a:hover{
     position: relative;
     left:10%;
 }
+/* apperance power and other details */
 #other-details{
     display: flex;
     flex-direction: column;
@@ -163,16 +176,19 @@ nav div a:hover{
     border-radius: 1rem;
     width:30%;
 }
+/* heading of characteristics of a hero */
 .heading{
     font-size: 2rem;
     color:white;
     font-weight: bold;
 }
+/* powerstats */
 #power{
     color:white;
     font-weight: bold;
     font-size: 1.3rem;
 }
+/* text class */
 .text{
     color:white;
     font-weight: bold;

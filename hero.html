@@ -1,19 +1,25 @@
 <html>
     <head>
+        <!-- title -->
         <title>Details of a Hero</title>
+        <!-- adding style sheet -->
         <link rel="stylesheet" type="text/css" href="hero.css">
     </head>
+    <!-- body -->
     <body>
+        <!-- header -->
         <header>
+            <!-- section for the heading of the app -->
         <section id="app_heading">
+            <!-- app name -->
             <div class="app_name add_padd"><a href="index.html">Super Hero App</a></div>
             
-            
+            <!-- favourite tab -->
             <div class="favourites">
                 <button><a href="favourite.html">Favourites</a></button>
             </div>
         </section>
-        
+        <!-- nav-bar -->
         <nav>
             <div><a href="#powerstats">Powerstats</a></div>
             <div><a href="#apperance">Apperance</a></div>
@@ -22,35 +28,45 @@
             <div><a href="#connections">Connections</a></div>
         </nav>
     </header>
+    <!-- header ends-->
+    <!-- notification alert -->
         <span id="alert" class="success">Success Message</span>
         <span id="alert"  class="error">Error Message</span>
+        <!-- div for storing the details of a hero -->
         <div class="helper">
         <div id="hero-detail">
+            <!-- hero name -->
             <div id="hero-name" class="add_padd"></div>
             
             <div id="main-details">
+                <!-- hero image -->
                 <div id="hero_img" class="add_padd">
                     <img>
                     <div id="fav_btn">Add to favourites</div>
                 </div>
                 <div id="other-details" class="add_padd">
+                    <!-- powerstats of a hero -->
                     <div id="powerstats"></div>
                     <div class="heading">Powerstats</div>
                     <div id="power">
                     </div>
                     <br>
+                    <!-- appearance of a hero -->
                     <div class="heading">Apperance</div>
                     <div id="apperance" class="text">
                     </div>
                     <br>
+                    <!-- biography of a hero -->
                     <div class="heading">Biography</div>
                     <div id="biography" class="text">
                     </div>
                     <br>
+                    <!-- occupation of a hero -->
                     <div class="heading">Occupation</div>
                     <div id="occupation" class="text">
                     </div>
                     <br>
+                    <!-- connections of a hero -->
                     <div class="heading">Connections</div>
                     <div id="connections" class="text">
                     </div>
@@ -59,6 +75,8 @@
             </div>
         </div>
     </div>
+    <!-- script -->
         <script type="text/javascript" src="hero.js"></script>
     </body>
+    <!-- body ends -->
 </html>
