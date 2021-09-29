@@ -11,9 +11,9 @@ body{
     width:fit-content;
     padding:10px;
     margin-top: 30px;
-    
+    cursor: pointer;
     border-radius: 1rem;
-    color:blueviolet;
+    color:black;
     font-size: 1.3rem;
     font-weight: bold;
 }
@@ -28,9 +28,11 @@ body{
 #alert{
     visibility: hidden;
     position: sticky;
+    top:0%;
     left:85%;
     z-index:100;
-    color:white;
+    color:black;
+    font-weight: bold;
     height:20px;
     width:auto;
     padding:20px;
@@ -38,10 +40,22 @@ body{
     transition-duration: 1000ms;
     font-size: 1.5rem;
 }
-main{
+header{
+    position: fixed;
+   top:0%;
+   margin-left: -0.5%;
+   z-index:10;
+   width:101%;
+   margin-top: 0;
+   background-color: black;
+}
+#app_heading{
     position: relative;
     display: flex;
     justify-content: space-around;
+    margin-top: -1%;
+    
+    padding-top: 1%;
 }
 .add_padd{
     padding:10px;
@@ -51,7 +65,7 @@ main{
 .app_name{
     font-size: 3rem;
     background-color: black;
-    
+    margin-top: 5px;
 }
 .app_name a{
     color:white;
@@ -67,6 +81,7 @@ main{
     margin-top: 10px;
     border-radius: 1rem;
     padding:10px;
+    cursor: pointer;
     
 }
 .favourites button a{
@@ -74,7 +89,7 @@ main{
     text-decoration: none;
 }
 .favourites button a:hover{
-    color:red;
+    color:yellow;
 }
 nav{
     display: flex;
@@ -82,7 +97,7 @@ nav{
     margin-top: 10px;
     padding:10px;
     width: 100%;
-    left:-0.5%;
+    /* left:-1%; */
     border:2px solid blueviolet;
     background-color: black;
 }
@@ -97,10 +112,13 @@ nav div a{
 nav div a:hover{
     color: yellow;
 }
+.helper{
+    position: relative;
+    top:20%;
+}
 #hero-detail{
     position: relative;
-    margin-top: 2%;
-    /* align-items: center; */
+    /* margin-top: 2%; */
     display: flex;
     flex-direction: column;
     

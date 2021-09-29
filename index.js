@@ -7,7 +7,7 @@ search.addEventListener('keyup',(e)=>{
     console.log("We serach for "+searched_hero);
     if(searched_hero.length<2)
     {
-        document.getElementById('result').innerHTML="Search for more than 3 characters";
+        document.getElementById('result').innerHTML="Search for more than 2 characters";
     }
     else
     {

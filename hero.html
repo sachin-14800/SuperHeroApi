@@ -4,23 +4,26 @@
         <link rel="stylesheet" type="text/css" href="hero.css">
     </head>
     <body>
-        <span id="alert" class="success">Success Message</span>
-        <span id="alert"  class="error">Error Message</span>
-        <main>
-            <div class="app_name add_padd"><a href="index.html"><i class="fas fa-mask"></i>Super Hero App</a></div>
+        <header>
+        <section id="app_heading">
+            <div class="app_name add_padd"><a href="index.html">Super Hero App</a></div>
             
             
             <div class="favourites">
-                <button><a href="favourites.html">Favourites</a></button>
+                <button><a href="favourite.html">Favourites</a></button>
             </div>
-        </main>
+        </section>
+        
         <nav>
-            <div><a href="#power">Powerstats</a></div>
+            <div><a href="#powerstats">Powerstats</a></div>
             <div><a href="#apperance">Apperance</a></div>
             <div><a href="#biography">Biography</a></div>
             <div><a href="#occupation">Occupation</a></div>
             <div><a href="#connections">Connections</a></div>
         </nav>
+    </header>
+        <span id="alert" class="success">Success Message</span>
+        <span id="alert"  class="error">Error Message</span>
         <div class="helper">
         <div id="hero-detail">
             <div id="hero-name" class="add_padd"></div>
@@ -31,21 +34,27 @@
                     <div id="fav_btn">Add to favourites</div>
                 </div>
                 <div id="other-details" class="add_padd">
+                    <div id="powerstats"></div>
                     <div class="heading">Powerstats</div>
                     <div id="power">
                     </div>
+                    <br>
                     <div class="heading">Apperance</div>
                     <div id="apperance" class="text">
                     </div>
+                    <br>
                     <div class="heading">Biography</div>
                     <div id="biography" class="text">
                     </div>
+                    <br>
                     <div class="heading">Occupation</div>
                     <div id="occupation" class="text">
                     </div>
+                    <br>
                     <div class="heading">Connections</div>
                     <div id="connections" class="text">
                     </div>
+                    <br>
                 </div>
             </div>
         </div>

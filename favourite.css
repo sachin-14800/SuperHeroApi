@@ -1,0 +1,97 @@
+body{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+nav{
+    position: relative;
+    top:10%;
+    left:20%;
+    display: flex;
+    justify-content: space-between;
+    width:60%;
+}
+.app_name{
+    font-size: 50px;
+    border: 2px solid blueviolet;
+    padding:10px;
+    border-radius: 1rem;
+    margin-bottom: 4%;
+}
+.app_name a{
+    color:white;
+    text-decoration: none;
+}
+.app_name a:hover{
+    color:yellow;
+}
+
+#result
+{
+    height:100%;
+    width:80%;
+    position: relative;
+    left:10%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: left;
+    color:white;
+    font-size: 2rem;
+    padding-top: 10%;
+}
+.hero-container{
+    height:420px;
+    width:300px;
+    background-color: black;
+    border: 2px solid blueviolet;
+    border-radius: 2rem;
+    text-align: center;
+    
+    margin-top: 4%;
+}
+.hero_img img{
+    position: relative;;
+    height:68%;
+    width:70%;
+    padding-top: 15%;
+    border-radius: 2rem;
+}
+.hero-name{
+    position: relative;
+    color:blueviolet;
+    padding-top: 2%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#alert{
+    visibility: hidden;
+    position: fixed;
+    top:2%;
+    left:80%;
+    z-index:100;
+    color:black;
+    font-weight: bold;
+    height:20px;
+    width:auto;
+    padding:20px;
+    border-radius: 1rem;
+    transition-duration: 1000ms;
+    font-size: 1.5rem;
+}
+.success{
+    background-color: rgb(6, 226, 6);
+}
+.error{
+    background-color: rgb(255, 17, 17);
+}
+#fav_btn{
+    border: none;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding:10px;
+    margin-top:5px;
+    cursor: pointer;
+}

@@ -15,6 +15,10 @@ nav{
 }
 .app_name{
     font-size: 50px;
+    background-color: black;
+    padding:10px;
+    border-radius: 1rem;
+    border: 2px solid blueviolet;
 }
 .app_name a{
     color:white;
@@ -25,13 +29,18 @@ nav{
 }
 .favourites button{
     font-size: 30px;
-    border: none;
-    background-color: transparent;
+    background-color: black;
+    padding:10px;
+    border-radius: 1rem;
+    border: 2px solid blueviolet;
     
 }
 .favourites button a{
     color:white;
     text-decoration: none;
+}
+.favourites button a:hover{
+    color:yellow;
 }
 .search{
     position: relative;
@@ -39,7 +48,7 @@ nav{
     left:20%;
 }
 .search input{
-    border: none;
+    border: 4px solid blueviolet;
     background-color: white;
     height:8%;
     width:60%;
@@ -59,29 +68,29 @@ nav{
     position: relative;
     left:10%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     flex-wrap: wrap;
-    align-items: flex-start;
     text-align: left;
     color:white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding-top: 2%;
 }
 .hero-container{
-    height:400px;
+    height:420px;
     width:300px;
     background-color: black;
-    border: 2px solid red;
+    border: 2px solid blueviolet;
     border-radius: 2rem;
     text-align: center;
-    
-    margin-top: 2%;
+    /* margin-left: 20px;
+    margin-right:50px; */
+    margin-top: 4%;
 }
 .hero_img img{
     position: relative;;
-    height:70%;
+    height:68%;
     width:70%;
-    padding-top: 15%;
+    padding-top: 10%;
     border-radius: 2rem;
 }
 .hero-name{
@@ -93,13 +102,14 @@ nav{
 }
 #alert{
     visibility: hidden;
-    position: sticky;
+    position: fixed;
     top:2%;
-    left:85%;
+    left:80%;
     z-index:100;
-    color:white;
+    color:black;
+    font-weight: bold;
     height:20px;
-    width:auto;
+    width:fit-content;
     padding:20px;
     border-radius: 1rem;
     transition-duration: 1000ms;
@@ -113,6 +123,10 @@ nav{
 }
 #fav_btn{
     border: none;
+    font-weight: bold;
     border-radius: 1rem;
-    padding:5px;
+    padding:10px;
+    cursor: pointer;
+    margin-top: 5px;
 }
+
